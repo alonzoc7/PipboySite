@@ -1,0 +1,73 @@
+* {
+    color:greenyellow;
+    background-color: black;
+    font-family: "Source Code Pro", monospace;
+}
+#static {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: .2;
+}
+#mainContainer {
+    position: relative;
+    z-index: 0;
+}
+#navBar {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    position: relative;
+    z-index: 0;
+}
+#tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tab {
+    margin: 5px;
+}
+#line {
+    width: 100%;
+    height: 2px;
+    background-color: greenyellow;
+}
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#botNavBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navBottom {
+    background-color: green;
+    opacity: .7;
+    color: greenyellow;
+    margin: 2px;
+    font-weight: bold;
+}
+#hp {
+    flex-basis: 20%;
+}
+#level{
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+    flex-wrap: nowrap;
+}
+#ap {
+    flex-basis: 20%;
+    text-align: right;
+}
+#levelBar {
+    margin-left: 5px;
+    height: 4px;
+    flex-basis: 80%;
+    background-color: black;
+    border: 2px solid greenyellow;
+}
