@@ -40,6 +40,14 @@
     height: 2px;
     background-color: greenyellow;
 }
+.tab {
+    border: none;
+    display: flex;
+}
+button:hover {
+    cursor: pointer;
+    background-color: green;
+}
 
 /* Middle Content */
 #mainContent{
@@ -63,6 +71,30 @@
 }
 .inv {
     visibility: collapse;
+    display: flex;
+}
+#invLeft {
+    width: 60%;
+    height: 100%;
+    margin: 2px;
+}
+.invItem {
+    margin: 10px;
+    font-size: 20px;
+}
+.invItem:hover {
+    background-color: greenyellow;
+    color: black;
+}
+#invItemIcon {
+    height: 10%;
+}
+#invItemDesc {
+}
+#invRight {
+    width: 40%;
+    height: 100%;
+    margin: 2px;
 }
 #data {
     grid-area: 1 / 1 / 2 / 2;
@@ -84,13 +116,13 @@
 }
 
 /* Bottom Bar */
-#statBotNav {
+#botStat {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
 }
-.navBottom {
+.botBox {
     background-color: green;
     opacity: .7;
     color: greenyellow;
@@ -121,16 +153,14 @@
     background-color: black;
     border: 2px solid greenyellow;
 }
-button:hover {
-    cursor: pointer;
-}
+
 
 
 @media (min-width: 769px) {
-    #botNavBar {
+    #botBar {
         height: 7vh;
     }
-    #navBar, #botNavBar, #name {
+    #navBar, #botBar, #name {
         font-size: 30px;
     }
     #levelBar {
